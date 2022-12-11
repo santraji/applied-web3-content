@@ -6,7 +6,7 @@ web3 = Web3(Web3.HTTPProvider(RPC_ENDPOINT))
 
 print(f"ChainID: {hex(web3.eth.chainId)}")
 
-block_latest = web3.eth.get_block(hex(16152249))
+block_latest = web3.eth.get_block("latest")
 print(block_latest)
 
 print(f"Latest block number: {block_latest['number']}")
